@@ -1,19 +1,12 @@
-<p align="center">
-     <a href="https://discord.gg/tRU27KtPAZ"><img src="https://discordapp.com/api/guilds/900083350314811432/widget.png?style=banner2"/></a>
-</p>
-
 ---
 
 ### How to use
-- Learn **FUCKING JAVA**
-- Gain some knowledge of obfuscation/bytecode/re *(Optional)*
-
-This deobfuscator does not provide any **gui** or **configuration file** because it's meant to run through an **IDE**.\
-To configure deobfuscator for your preferences you need to edit **Loader** class.
-
-- https://github.com/narumii/Deobfuscator#transformers
-
----
+- Download the jar from releases
+- Run
+- Select the file to be deobfuscated
+- Select the output file
+- Select the transformer to be used
+- Click "Start"
 
 ### Supported Obfuscators
 
@@ -42,18 +35,7 @@ To configure deobfuscator for your preferences you need to edit **Loader** class
 ---
 
 ### Transformers
-> If you know nothing bout deobfuscation use **precomposed** ones\
 > Most of transformers are done without frames so they might not work sometimes
-- [Precomposed transformers for some obfuscators](https://github.com/narumii/Deobfuscator/tree/master/src/main/java/uwu/narumi/deobfuscator/transformer/composed)
-- [All available transformers](https://github.com/narumii/Deobfuscator/tree/master/src/main/java/uwu/narumi/deobfuscator/transformer/impl)
-
----
-
-### SandBox doesn't work
-
-> Just add `-noverify` to jvm arguments if still doesn't work then open issue
-
-![](https://i.imgur.com/PBCQ6iO.png)
 
 ---
 
