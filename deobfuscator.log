@@ -1,0 +1,272 @@
+[21:37:17] [AWT-EventQueue-0/ERROR] - SecurityManager is disabled due to deobfuscation errors, transformers that using SandBox can be exploited
+[21:37:17] [AWT-EventQueue-0/INFO] - Loading input file: C:\Users\Mark\Downloads\Vergo.jar
+[21:37:23] [AWT-EventQueue-0/INFO] - Loaded input file: C:\Users\Mark\Downloads\Vergo.jar
+
+[21:37:23] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:23] [AWT-EventQueue-0/INFO] - Running SuperblaubeereTransformer transformer
+[21:37:23] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:23] [AWT-EventQueue-0/INFO] - Running UniversalNumberTransformer transformer
+[21:37:23] [AWT-EventQueue-0/INFO] - Ended UniversalNumberTransformer transformer in 432 ms
+[21:37:23] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:23] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:23] [AWT-EventQueue-0/INFO] - Running SuperblaubeereNumberPoolTransformer transformer
+[21:37:24] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereNumberPoolTransformer transformer in 418 ms
+[21:37:24] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:24] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:24] [AWT-EventQueue-0/INFO] - Running SuperblaubeereFlowTransformer transformer
+[21:37:24] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereFlowTransformer transformer in 380 ms
+[21:37:24] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:24] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:24] [AWT-EventQueue-0/INFO] - Running SuperblaubeereSourceInfoStringTransformer transformer
+[21:37:24] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereSourceInfoStringTransformer transformer in 12 ms
+[21:37:24] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:24] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:24] [AWT-EventQueue-0/INFO] - Running SuperblaubeereStringTransformer transformer
+[21:37:24] [AWT-EventQueue-0/ERROR] - Error occurred when transforming SuperblaubeereStringTransformer
+[21:37:24] [AWT-EventQueue-0/DEBUG] - Error
+java.lang.ArithmeticException: / by zero
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.decryptXor(SuperblaubeereStringTransformer.java:143) ~[classes/:?]
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.lambda$transform$6(SuperblaubeereStringTransformer.java:46) ~[classes/:?]
+	at java.util.Optional.ifPresent(Optional.java:178) ~[?:?]
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.lambda$transform$7(SuperblaubeereStringTransformer.java:31) ~[classes/:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1006) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.lambda$transform$8(SuperblaubeereStringTransformer.java:31) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.lambda$transform$9(SuperblaubeereStringTransformer.java:23) ~[classes/:?]
+	at java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4783) ~[?:?]
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.transform(SuperblaubeereStringTransformer.java:20) ~[classes/:?]
+	at uwu.narumi.deobfuscator.Deobfuscator.lambda$transform$1(Deobfuscator.java:114) ~[classes/:?]
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:4204) ~[?:?]
+	at uwu.narumi.deobfuscator.Deobfuscator.transform(Deobfuscator.java:109) ~[classes/:?]
+	at uwu.narumi.deobfuscator.transformer.ComposedTransformer.transform(ComposedTransformer.java:13) ~[classes/:?]
+	at uwu.narumi.deobfuscator.Deobfuscator.lambda$transform$1(Deobfuscator.java:114) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at uwu.narumi.deobfuscator.Deobfuscator.transform(Deobfuscator.java:109) ~[classes/:?]
+	at uwu.narumi.deobfuscator.Deobfuscator.start(Deobfuscator.java:69) ~[classes/:?]
+	at me.mkeo102.Ui.MainGui.startDeobfuscator(MainGui.java:174) ~[classes/:?]
+	at me.mkeo102.Ui.MainGui.lambda$new$2(MainGui.java:99) ~[classes/:?]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972) ~[?:?]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314) ~[?:?]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407) ~[?:?]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262) ~[?:?]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279) ~[?:?]
+	at java.awt.Component.processMouseEvent(Component.java:6620) ~[?:?]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3398) ~[?:?]
+	at java.awt.Component.processEvent(Component.java:6385) ~[?:?]
+	at java.awt.Container.processEvent(Container.java:2266) ~[?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:4995) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2324) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4827) ~[?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948) ~[?:?]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575) ~[?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2310) ~[?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2780) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4827) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:747) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:745) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:744) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+[21:37:24] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:24] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:24] [AWT-EventQueue-0/INFO] - Running SuperblaubeereStringPoolTransformer transformer
+[21:37:25] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereStringPoolTransformer transformer in 507 ms
+[21:37:25] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:25] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:25] [AWT-EventQueue-0/INFO] - Running SuperblaubeereInvokeDynamicTransformer transformer
+[21:37:25] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereInvokeDynamicTransformer transformer in 506 ms
+[21:37:25] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:25] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:25] [AWT-EventQueue-0/INFO] - Running SuperblaubeerePackagerTransformer transformer
+[21:37:26] [AWT-EventQueue-0/INFO] - Ended SuperblaubeerePackagerTransformer transformer in 21 ms
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:26] [AWT-EventQueue-0/INFO] - Running UniversalNumberTransformer transformer
+[21:37:26] [AWT-EventQueue-0/INFO] - Ended UniversalNumberTransformer transformer in 155 ms
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:26] [AWT-EventQueue-0/INFO] - Running SuperblaubeereNumberPoolTransformer transformer
+[21:37:26] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereNumberPoolTransformer transformer in 274 ms
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:26] [AWT-EventQueue-0/INFO] - Running SuperblaubeereFlowTransformer transformer
+[21:37:26] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereFlowTransformer transformer in 242 ms
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:26] [AWT-EventQueue-0/INFO] - Running SuperblaubeereSourceInfoStringTransformer transformer
+[21:37:26] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereSourceInfoStringTransformer transformer in 9 ms
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:26] [AWT-EventQueue-0/INFO] - Running SuperblaubeereStringTransformer transformer
+[21:37:26] [AWT-EventQueue-0/ERROR] - Error occurred when transforming SuperblaubeereStringTransformer
+[21:37:26] [AWT-EventQueue-0/DEBUG] - Error
+java.lang.ArithmeticException: / by zero
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.decryptXor(SuperblaubeereStringTransformer.java:143) ~[classes/:?]
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.lambda$transform$6(SuperblaubeereStringTransformer.java:46) ~[classes/:?]
+	at java.util.Optional.ifPresent(Optional.java:178) ~[?:?]
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.lambda$transform$7(SuperblaubeereStringTransformer.java:31) ~[classes/:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1006) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.lambda$transform$8(SuperblaubeereStringTransformer.java:31) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.lambda$transform$9(SuperblaubeereStringTransformer.java:23) ~[classes/:?]
+	at java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4783) ~[?:?]
+	at uwu.narumi.deobfuscator.transformer.impl.sb27.SuperblaubeereStringTransformer.transform(SuperblaubeereStringTransformer.java:20) ~[classes/:?]
+	at uwu.narumi.deobfuscator.Deobfuscator.lambda$transform$1(Deobfuscator.java:114) ~[classes/:?]
+	at java.util.Arrays$ArrayList.forEach(Arrays.java:4204) ~[?:?]
+	at uwu.narumi.deobfuscator.Deobfuscator.transform(Deobfuscator.java:109) ~[classes/:?]
+	at uwu.narumi.deobfuscator.transformer.ComposedTransformer.transform(ComposedTransformer.java:13) ~[classes/:?]
+	at uwu.narumi.deobfuscator.Deobfuscator.lambda$transform$1(Deobfuscator.java:114) ~[classes/:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at uwu.narumi.deobfuscator.Deobfuscator.transform(Deobfuscator.java:109) ~[classes/:?]
+	at uwu.narumi.deobfuscator.Deobfuscator.start(Deobfuscator.java:69) ~[classes/:?]
+	at me.mkeo102.Ui.MainGui.startDeobfuscator(MainGui.java:174) ~[classes/:?]
+	at me.mkeo102.Ui.MainGui.lambda$new$2(MainGui.java:99) ~[classes/:?]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972) ~[?:?]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314) ~[?:?]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407) ~[?:?]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262) ~[?:?]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279) ~[?:?]
+	at java.awt.Component.processMouseEvent(Component.java:6620) ~[?:?]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3398) ~[?:?]
+	at java.awt.Component.processEvent(Component.java:6385) ~[?:?]
+	at java.awt.Container.processEvent(Container.java:2266) ~[?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:4995) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2324) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4827) ~[?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948) ~[?:?]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575) ~[?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516) ~[?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2310) ~[?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2780) ~[?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4827) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:747) ~[?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:745) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:744) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:26] [AWT-EventQueue-0/INFO] - Running SuperblaubeereStringPoolTransformer transformer
+[21:37:26] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereStringPoolTransformer transformer in 264 ms
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:26] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:26] [AWT-EventQueue-0/INFO] - Running SuperblaubeereInvokeDynamicTransformer transformer
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereInvokeDynamicTransformer transformer in 308 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended SuperblaubeereTransformer transformer in 3919 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:27] [AWT-EventQueue-0/INFO] - Running CleanTransformer transformer
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:27] [AWT-EventQueue-0/INFO] - Running ImageCrasherRemoveTransformer transformer
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended ImageCrasherRemoveTransformer transformer in 13 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:27] [AWT-EventQueue-0/INFO] - Running LineNumberRemoveTransformer transformer
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended LineNumberRemoveTransformer transformer in 293 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:27] [AWT-EventQueue-0/INFO] - Running TryCatchFixTransformer transformer
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended TryCatchFixTransformer transformer in 125 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:27] [AWT-EventQueue-0/INFO] - Running UnHideTransformer transformer
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended UnHideTransformer transformer in 36 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:27] [AWT-EventQueue-0/INFO] - Running InvalidAnnotationRemoveTransformer transformer
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended InvalidAnnotationRemoveTransformer transformer in 79 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:27] [AWT-EventQueue-0/INFO] - Running MethodLocalsAndParametersRemoveTransformer transformer
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended MethodLocalsAndParametersRemoveTransformer transformer in 19 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:27] [AWT-EventQueue-0/INFO] - Running SignatureRemoveTransformer transformer
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended SignatureRemoveTransformer transformer in 41 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+[21:37:27] [AWT-EventQueue-0/INFO] - Running SourceInfoRemoveTransformer transformer
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended SourceInfoRemoveTransformer transformer in 4 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - Ended CleanTransformer transformer in 632 ms
+[21:37:27] [AWT-EventQueue-0/INFO] - -------------------------------------
+
+[21:37:27] [AWT-EventQueue-0/INFO] - Saving output file: C:\Users\Mark\Downloads\Vergo-Deobf.jar
+[21:37:50] [AWT-EventQueue-0/INFO] - Saved output file: C:\Users\Mark\Downloads\Vergo-Deobf.jar
+
