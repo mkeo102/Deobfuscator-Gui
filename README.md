@@ -1,5 +1,3 @@
----
-
 ### How to use
 - Download the jar from releases
 - Run
