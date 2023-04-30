@@ -1,4 +1,5 @@
 ### How to use
+
 - Download the jar from releases
 - Run
 - Select the file to be deobfuscated
@@ -20,6 +21,7 @@
 - **HP888**: Some stupid polish obfuscator v2 used in EyfenCord/SafeMC
 
 ### Partially Supported Obfuscators
+
 - [Binsecure 0.4/Latest](https://binclub.dev/purchasing/)
 - [(Skid)q~~Protect~~](https://mdma.dev/)
 - [Radon](https://github.com/ItzSomebody/radon)
@@ -27,17 +29,21 @@
 - Sentinel
 
 ### In Future Supported Obfuscators (maybe)
+
 - [Skidfuscator](https://github.com/terminalsin/skidfuscator-java-obfuscator)
 - [Branchlock](https://branchlock.net/)
 
 ---
 
 ### Transformers
+
 > Most of transformers are done without frames so they might not work sometimes
 
 ---
 
-> Deobfuscator only makes code readable for humans also if some decompilators can't decompile class try another and if no one works just create issue that includes: `[sample jar with obfuscation, deobfuscator transformers, deobfuscator log file]` and optional obfuscator name
+> Deobfuscator only makes code readable for humans also if some decompilators can't decompile class try another and if
+> no one works just create issue that
+> includes: `[sample jar with obfuscation, deobfuscator transformers, deobfuscator log file]` and optional obfuscator name
 
 ---
 

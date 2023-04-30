@@ -19,26 +19,18 @@ public class MainGui extends JFrame {
     //Please note that I hard coded all of this. I didn't use the fucking intellij gui designer bc I don't like it. Please be considerate
 
 
-
-    private final JPanel panel1;
-    private final JButton button1, inputButton,outputButton;
-
-    private final JFileChooser input, output;
-
-    private final JTextArea status;
-
-    final JCheckBox BinsecureUseStackAnalyzer, ScutiIsStrongStringType, SuperblaubeereIsPacked ;
-
-    private final JComboBox comboBox1;
-
-    public final static String[] Transformers = {"QProtect_Latest", "QProtect V1_7_2", "Binsecure", "Bozoriusz", "Caesium", "CheatBreaker", "Clean", "Monsey", "Paramorphism", "Radon", "Scuti", "Superblaubeere"};
-
-    File inputFile, outputFile;
-
+    public final static String[] Transformers = {"QProtect_Latest", "QProtect V1_7_2", "Binsecure", "Bozoriusz", "Caesium", "CheatBreaker", "Clean", "Monsey", "Paramorphism", "Radon", "Scuti", "Superblaubeere", "Skidfuscator"};
     public static boolean completed = false;
     public static String Status = "Idle...";
+    final JCheckBox BinsecureUseStackAnalyzer, ScutiIsStrongStringType, SuperblaubeereIsPacked;
+    private final JPanel panel1;
+    private final JButton button1, inputButton, outputButton;
+    private final JFileChooser input, output;
+    private final JTextArea status;
+    private final JComboBox comboBox1;
+    File inputFile, outputFile;
 
-    public MainGui(){
+    public MainGui() {
 
         this.setTitle("Deobfuscator by Narumii | Gui by Mkeo102");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -56,17 +48,14 @@ public class MainGui extends JFrame {
         inputButton.addActionListener(
 
                 e -> {
-                    int response  = input.showOpenDialog(null);
+                    int response = input.showOpenDialog(null);
 
-                    if(response == JFileChooser.APPROVE_OPTION){
+                    if (response == JFileChooser.APPROVE_OPTION) {
                         inputFile = new File(input.getSelectedFile().getAbsolutePath());
                     }
                 }
 
         );
-
-
-
 
 
         output = new JFileChooser();
@@ -81,9 +70,9 @@ public class MainGui extends JFrame {
         outputButton.addActionListener(
 
                 e -> {
-                    int response  = output.showOpenDialog(null);
+                    int response = output.showOpenDialog(null);
 
-                    if(response == JFileChooser.APPROVE_OPTION){
+                    if (response == JFileChooser.APPROVE_OPTION) {
                         outputFile = new File(output.getSelectedFile().getAbsolutePath());
                     }
                 }
@@ -96,7 +85,7 @@ public class MainGui extends JFrame {
 
                     try {
                         startDeobfuscator();
-                    } catch(Exception exception){
+                    } catch (Exception exception) {
                         exception.printStackTrace();
                     }
                 }
@@ -105,7 +94,7 @@ public class MainGui extends JFrame {
 
         this.comboBox1 = new JComboBox();
 
-        for(String s : Transformers){
+        for (String s : Transformers) {
 
             comboBox1.addItem(s);
 
@@ -118,9 +107,7 @@ public class MainGui extends JFrame {
         SuperblaubeereIsPacked = new JCheckBox("SuperblaubeereIsPacked");
 
 
-
-
-        add(inputButton,outputButton,button1,comboBox1,BinsecureUseStackAnalyzer,ScutiIsStrongStringType,SuperblaubeereIsPacked, status);
+        add(inputButton, outputButton, button1, comboBox1, BinsecureUseStackAnalyzer, ScutiIsStrongStringType, SuperblaubeereIsPacked, status);
 
         this.panel1.setVisible(true);
         this.add(panel1);
@@ -129,7 +116,7 @@ public class MainGui extends JFrame {
 
 
         //BinsecureUseStackAnalyzer visibility check
-        while(true){
+        while (true) {
             status.setText(Status);
             BinsecureUseStackAnalyzer.setVisible(comboBox1.getItemAt(comboBox1.getSelectedIndex()) == "Binsecure");
             ScutiIsStrongStringType.setVisible(comboBox1.getItemAt(comboBox1.getSelectedIndex()) == "Scuti");
@@ -138,9 +125,9 @@ public class MainGui extends JFrame {
 
     }
 
-    public void add(Component... o){
+    public void add(Component... o) {
 
-        for(Component c : o){
+        for (Component c : o) {
 
             this.panel1.add(c);
 
@@ -168,7 +155,7 @@ public class MainGui extends JFrame {
         Status = "Working...";
         this.status.setText(Status);
 
-         Deobfuscator.builder()
+        Deobfuscator.builder()
                 .input(Path.of(inputFile.getAbsolutePath()))
                 .output(Path.of(outputFile.getAbsolutePath()))
                 .transformers(
@@ -176,55 +163,56 @@ public class MainGui extends JFrame {
                         getTransformer()
 
                 ).normalize()
-                 .classReaderFlags(ClassReader.SKIP_FRAMES)
-                 .classWriterFlags(0)
-                 .consoleDebug()
-                 .build()
-                 .start();
+                .classReaderFlags(ClassReader.SKIP_FRAMES)
+                .classWriterFlags(0)
+                .consoleDebug()
+                .build()
+                .start();
 
     }
 
-    private Transformer getTransformer(){
+    private Transformer getTransformer() {
 
-        switch((String) comboBox1.getItemAt(comboBox1.getSelectedIndex())){
+        switch ((String) comboBox1.getItemAt(comboBox1.getSelectedIndex())) {
             case "QProtect_Latest": {
                 return new qProtectTransformer();
             }
-            case "QProtect V1_7_2":{
+            case "QProtect V1_7_2": {
                 return new qProtectV1_7_2_Transformer();
             }
             case "Caesium": {
                 return new CaesiumTransformer();
             }
-            case "Binsecure":{
+            case "Binsecure": {
                 return new BinsecureTransformer(BinsecureUseStackAnalyzer.isSelected());
             }
-            case "Bozoriusz":{
+            case "Bozoriusz": {
                 return new BozoriuszTransformer();
             }
-            case "CheatBreaker":{
-                return  new CheatBreakerTransformer();
+            case "CheatBreaker": {
+                return new CheatBreakerTransformer();
             }
-            case "Clean":{
+            case "Clean": {
                 return new CleanTransformer();
             }
-            case "Monsey":{
+            case "Monsey": {
                 return new MonseyTransformer();
             }
-            case "Paramorphism":{
-                return  new ParamorphismTransformer();
+            case "Paramorphism": {
+                return new ParamorphismTransformer();
             }
-            case "Radon":{
-                return  new RadonTransformer();
-
+            case "Radon": {
+                return new RadonTransformer();
             }
-            case "Scuti":{
+            case "Scuti": {
                 return new ScutiTransformer(ScutiIsStrongStringType.isSelected());
 
             }
-            case "Superblaubeere":{
+            case "Superblaubeere": {
                 return new SuperblaubeereTransformer(SuperblaubeereIsPacked.isSelected());
-
+            }
+            case "Skidfuscator": {
+                return new SkidfuscatorTransformer();
             }
 
         }

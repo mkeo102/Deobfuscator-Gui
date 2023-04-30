@@ -7,7 +7,5 @@ public class Loader {
         MainGui gui = new MainGui();
 
 
-
-
     }
 }

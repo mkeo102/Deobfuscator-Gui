@@ -12,9 +12,6 @@ import org.objectweb.asm.tree.analysis.SourceValue;
 import java.util.*;
 import java.util.function.Predicate;
 
-/**
- * Used: https://github.com/ItzSomebody/radon/blob/master/src/main/java/me/itzsomebody/radon/utils/ASMUtils.java
- */
 public class ASMHelper implements Opcodes {
 
     public static boolean isString(AbstractInsnNode node) {
