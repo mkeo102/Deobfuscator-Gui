@@ -27,10 +27,10 @@
 - [Radon](https://github.com/ItzSomebody/radon)
 - Colonial
 - Sentinel
+- [Skidfuscator](https://github.com/terminalsin/skidfuscator-java-obfuscator)
 
 ### In Future Supported Obfuscators (maybe)
 
-- [Skidfuscator](https://github.com/terminalsin/skidfuscator-java-obfuscator)
 - [Branchlock](https://branchlock.net/)
 
 ---
