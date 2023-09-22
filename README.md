@@ -1,3 +1,7 @@
+
+
+###OUTDATED AS FUCK DO NOT USE!
+
 ### How to use
 
 - Download the jar from releases
